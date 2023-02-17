@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: white;
+    font-family: san-serif;
+    outline: none;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.calculator{
+    background-color: #e0e0e0; 
+    padding: 15px;
+    border-radius: 30px;
+    -webkit-box-shadow: 15px 15px 30px #bebebe,
+             -15px -15px 30px #ffffff;
+         box-shadow: 15px 15px 30px #bebebe,
+             -15px -15px 30px #ffffff;
+    display: grid;
+    grid-template-columns:repeat(4, 68px);
+    
+}
+input{
+    grid-column: span 4 ;
+    height: 80px;
+    width: 270px;
+    background-color: #ccc;
+    -webkit-box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+          box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+    -webkit-transition: 300ms ease-in-out;
+    transition: 300ms ease-in-out;
+    border: none;
+    outline: none;
+    padding: 1em;
+    border-radius: 15px;
+    margin-right: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    font-size: 40px; 
+    text-align: right
+}
+.input:focus {
+    background-color: #ecf0f3;
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
+    -webkit-box-shadow:  13px 13px 100px #969696,
+               -13px -13px 100px #ffffff;
+            box-shadow:  13px 13px 100px #969696,
+               -13px -13px 100px #ffffff;
+  }
+  button{
+    height:50px;
+    width: 63px;
+    background-color: #ecf0f3;
+    box-shadow: inset -5px -5px 12px #ffffff,
+                      -5px -5px 12px rgba(0,0,0,.16);
+    
+    border: none;
+    padding: 2px;
+    border-radius: 20%;
+    margin: 10px ;
+    margin-left: 0px;
+    font-size: 20px; 
+
+  }
+  .equal{
+    margin-left: 20px;
+    width: 95px;
+  }
+
+    
+
+h2{
+    background-color: #e0e0e0;
+    background: linear-gradient(
+      90deg,
+      #866ee7,
+      #ea60da,
+      #2d0c61,
+      #6b1dfb,
+      #2cca91
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+   
+  
+
+}
+.calc{
+    border: 12px;
+    color: #6b1dfb;
+    background:  #e0e0e0;
+    display: flex;
+    font-size: 15px;
+    margin-left: 2px;
+}
+
